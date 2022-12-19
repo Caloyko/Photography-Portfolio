@@ -1,9 +1,9 @@
-import React, { useState, useEffect, createContext } from 'react'
+import React, { useState, useEffect, createContext } from 'react';
 
-
+// create context
 export const CursorContext = createContext();
 
-const CursorProvider = ({children}) => {
+const CursorProvider = ({ children }) => {
   // cursor position state
   const [cursorPos, setCursorPos] = useState({
     x: 0,
